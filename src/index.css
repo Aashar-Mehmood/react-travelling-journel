@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  padding: 30px 0;
+  font-family: "Poppins", sans-serif;
+}
+.text-red {
+  color: rgb(255, 82, 82);
+}
+a {
+  color: rgb(57, 57, 57);
+}
+header,
+main {
+  width: 80%;
+  margin: auto;
+}
+header {
+  padding: 12px 0;
+  background-color: rgb(255, 82, 82);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h3 {
+  padding-left: 10px;
+}
+main {
+  background-color: white;
+  padding: 20px 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card {
+  display: flex;
+  margin-block-end: 30px;
+}
+
+.card:nth-child(1) {
+  margin-top: 30px;
+}
+
+.card--image {
+  padding: 0.8rem 0;
+  width: 350px;
+  display: flex;
+  align-items: stretch;
+}
+
+.card--image img {
+  width: 350px;
+  border-radius: 12px;
+}
+.card--text {
+  padding: 15px 30px;
+}
+
+.location span {
+  margin: 0 15px 0 7px;
+}
+
+.card--text h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.card--text .date {
+  margin: 5px 0 12px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.card--text .description {
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 1024px) {
+  header,
+  main {
+    width: 94%;
+  }
+  .card--image {
+    padding: 1.4rem 0;
+  }
+}
+@media screen and (max-width: 912px) {
+  .card {
+    flex-direction: column;
+  }
+  .card--image,
+  .card--image img {
+    width: 100%;
+  }
+  .card--image {
+    padding: 15px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card--image,
+  .card--text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  header,
+  main {
+    width: 96%;
+  }
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .location a {
+    margin: 5px 0px;
+    padding-left: 4px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header,
+  main {
+    width: 100%;
+  }
+}
